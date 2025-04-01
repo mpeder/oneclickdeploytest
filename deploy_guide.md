@@ -1,4 +1,4 @@
-# GGoogle Cloud Cortex Framework for Meridian
+# Google Cloud Cortex Framework for Meridian
 <walkthrough-tutorial-duration duration="30min"></walkthrough-tutorial-duration>
 
 ## What is Google Cloud Cortex Framework for Meridian?
