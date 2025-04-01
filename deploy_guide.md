@@ -17,7 +17,11 @@ Click the **Start** button to move to the next step.
 <walkthrough-enable-apis apis="bigquery.googleapis.com"></walkthrough-enable-apis>
 
 
+## Open Cloud Shell
+<walkthrough-open-cloud-shell-button></walkthrough-open-cloud-shell-button>
+
 ## Create Meridian Runner Service Account
+<walkthrough-cloud-shell-icon></walkthrough-cloud-shell-icon>
 
 ```sh
 gcloud config set project <walkthrough-project-id/>
@@ -30,15 +34,21 @@ gcloud iam service-accounts create cortex-meridian-colab-runner \
   --display-name="Cortex Meridian Runner"
 ```
 
+## Start deployment
+<walkthrough-cloud-shell-icon></walkthrough-cloud-shell-icon>
 ```sh
 ./1_click_meridian.sh
 ```
 
 ## Deployment started
 
+<walkthrough-notification-menu-icon></walkthrough-notification-menu-icon>
+
 The deployment is now running please wait for the Cloud Build deployment to complete.
 
-<walkthrough-spotlight-pointer sectionId="CLOUD_BUILD_SECTION">Go to Cloud Build</walkthrough-spotlight-pointer>
+[Go to Cloud Build](https://console.cloud.google.com/cloud-build/builds).
+
+[Go to Cloud Build](https://console.cloud.google.com/cloud-build/builds?target=_blank).
 
 ## Conclusion
 
