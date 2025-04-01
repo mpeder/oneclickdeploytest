@@ -20,6 +20,11 @@ Click the **Start** button to move to the next step.
 ## Create Meridian Runner Service Account
 
 ```sh
+gcloud config set project <walkthrough-project-id/>
+```
+
+
+```sh
 gcloud iam service-accounts create cortex-meridian-colab-runner \
   --description="Cortex for Meridian Colab Runner Service Account" \
   --display-name="Cortex Meridian Runner"
