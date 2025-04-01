@@ -19,6 +19,8 @@ Cortex for Meridian will be installed in the selected project: `<walkthrough-pro
 
 The default region used is: `us-central1`
 
+Click the **Next** button to move to the next step.
+
 ## Enable APIs
 <walkthrough-cloud-shell-icon></walkthrough-cloud-shell-icon>
 
