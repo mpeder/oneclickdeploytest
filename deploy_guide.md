@@ -30,14 +30,6 @@ gcloud iam service-accounts create cortex-meridian-colab-runner \
   --display-name="Cortex Meridian Runner"
 ```
 
-The following directives insert Google Cloud details related to the currently selected project.
-
-Directive	Description
-<walkthrough-project-id/>	The user's current project ID.
-<walkthrough-project-name/>	The user's project name.
-<walkthrough-project-id-no-domain/>	The user's project ID without the domain scope.
-<walkthrough-project-number/>	The user's current project number.
-
 ## Congratulations
 <walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
 
