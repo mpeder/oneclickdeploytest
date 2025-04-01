@@ -30,13 +30,18 @@ gcloud iam service-accounts create cortex-meridian-colab-runner \
   --display-name="Cortex Meridian Runner"
 ```
 
-## Congratulations
-<walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
+```sh
+./1_click_meridian.sh
+```
 
-You are now done with the deployment of Cortex for Meridian.
+## Deployment started
 
-Please wait for the Cloud Build deployment to complete and find the ressources deployed in the portal.
+The deployment is now running please wait for the Cloud Build deployment to complete.
 
 <walkthrough-spotlight-pointer sectionId="CLOUD_BUILD_SECTION">Go to Cloud Build</walkthrough-spotlight-pointer>
 
+## Conclusion
 
+Thanks for using Google Cloud Cortex Framework for Meridian!
+
+<walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
