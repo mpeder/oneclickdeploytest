@@ -32,43 +32,22 @@ Cortex for Meridian will be installed in the selected project: `<walkthrough-pro
 
 The default region used is: `us-central1`. Make sure you select this when viewing e.g. Colab Enterprise runtime templates and executions.
 
+Execute to 
+
+export PROJECT_ID=$(gcloud config get-value project)
+
 Click the **Next** button to move to the next step.
-
-## Enable APIs
-<walkthrough-cloud-shell-icon></walkthrough-cloud-shell-icon>
-
-Before starting deployment we need to enable the following APIs:
-
-<walkthrough-enable-apis apis="bigquery.googleapis.com,cloudbuild.googleapis.com"></walkthrough-enable-apis>
-
-After enabling the APIs, click the **Next** button to move to the next step.
-
-## Create Meridian Runner Service Account
-<walkthrough-cloud-shell-icon></walkthrough-cloud-shell-icon>
-
-The Workflow and Colab Enterprise notebook use for running Meridian with Cortex marketing and sales data requires a seperate Service Account.
-
-This service account will be created automatically when you begin
-
-To create the Service Account run this command:
-
-```sh
-gcloud iam service-accounts create cortex-meridian-colab-runner \
-  --description="Cortex for Meridian Colab Runner Service Account" \
-  --display-name="Cortex Meridian Runner"
-```
-
-Assign the required roles to the Service Account with this command:
-
-```sh
-gcloud projects add-iam-policy-binding
-```
 
 ## Start deployment
 <walkthrough-cloud-shell-icon></walkthrough-cloud-shell-icon>
+
 ```sh
-./1_click_meridian.sh
+./1_click_meridian.sh --project "<walkthrough-project-id/>"
 ```
+
+<walkthrough-footnote>The 1-Click deployment will create Marketing datasets, GCS buckets and deploy service needed to run Meridian on sample data. </walkthrough-footnote>
+
+When the script starts click the **Next** button.
 
 ## Deployment started
 
