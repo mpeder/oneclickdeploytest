@@ -2,9 +2,31 @@
 
 set -e
 
-echo "Deploying Meridian"
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --project)
+      PROJECT_IN="$2"
+      shift 2
+      ;;
+    *)
+      # Handle other arguments or flags if needed
+      echo "Unknown option: $1" >&2
+      shift
+      ;;
+  esac
+done
 
-echo "Setting project to: ${1}"
+if [ -n "$PROJECT_IN" ]; then
+  echo "Deploying Meridian"
 
-gcloud config set project "${1}"
+    echo "Setting active project to: ${1}"
+
+    gcloud config set project "${1}"
+
 export PROJECT_ID=$(gcloud config get-value project)
+else
+  echo "Error: --project argument not provided or value is missing." >&2
+  exit 1
+fi
+
+

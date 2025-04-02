@@ -32,10 +32,6 @@ Cortex for Meridian will be installed in the selected project: `<walkthrough-pro
 
 The default region used is: `us-central1`. Make sure you select this when viewing e.g. Colab Enterprise runtime templates and executions.
 
-Execute to 
-
-export PROJECT_ID=$(gcloud config get-value project)
-
 Click the **Next** button to move to the next step.
 
 ## Start deployment
