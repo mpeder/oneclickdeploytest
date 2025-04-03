@@ -3,8 +3,9 @@
 
 ## What is Google Cloud Cortex Framework for Meridian?
 
-TODO
-Cortex Framework for Meridian is bla bla bla
+One of the key value propositions of Google Cloud Cortex Framework is to provide a Data & AI foundation for next generation enterprise intelligence that enables analytics spanning across key areas such as sales and marketing, order fulfillment and inventory management. 
+
+Cortex for Marketing provides cross media platform KPIs and metrics. These metrics are a significant part of the pre-modeling data preparation step for running Google’s latest Marketing Mix Model (MMM) called Meridian. Advertisers can accelerate the pre-modeling data preparation process by leveraging Cortex Data Foundation.
 
 For more information, see:
 
@@ -15,9 +16,9 @@ For more information, see:
 This tutorial will guide you through demo deployment of Cortex Framework for Meridian in your own Google Cloud project.
 
 This deployment includes:
-- TODO
-- TODO
-- Oracle EBS sales data
+- Cortex Marketing with Cross Media with sample marketing data for Google Ads, YouTube, Meta and TikTik
+- Cortex for Meridian
+- Oracle EBS with sample sales data
 
 For a full production deployment please follow the [full deployment steps](https://cloud.google.com/cortex/docs/overview#deployment)
 
