@@ -42,7 +42,7 @@ Click the **Next** button to move to the next step.
 ./1_click_meridian.sh --project "<walkthrough-project-id/>"
 ```
 
-<walkthrough-footnote>The 1-Click deployment will create Marketing datasets, GCS buckets and deploy service needed to run Meridian on sample data. </walkthrough-footnote>
+<walkthrough-footnote>The 1-Click deployment will create Marketing and Oracle sales datasets, GCS buckets and deploy services needed to run Meridian with the sample data. </walkthrough-footnote>
 
 When the script starts click the **Next** button.
 
@@ -50,18 +50,18 @@ When the script starts click the **Next** button.
 
 <walkthrough-notification-menu-icon></walkthrough-notification-menu-icon>
 
-The deployment is now running please wait for the Cloud Build deployment to complete.
+The deployment is now running please wait for the Cloud Build deployment to complete. This will take about 20-30 mins.
 
 [Go to Cloud Build](https://console.cloud.google.com/cloud-build/builds).
 
 [Go to Workflows](https://console.cloud.google.com/workflows/workflow/us-central1/cortex-meridian-execute-notebook/executions)
 
-[Go to Notebook Executions](https://console.cloud.google.com/vertex-ai/colab/execution-jobs)
+[Go to Notebook Executions](https://console.cloud.google.com/vertex-ai/colab/execution-jobs) (select `us-central1` as region)
 
 Click the **Next** button to finish.
 
 ## Conclusion
 
-Thanks for trying Google Cloud Cortex Framework for Meridian!
+Thank you for trying Google Cloud Cortex Framework for Meridian!
 
 <walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
