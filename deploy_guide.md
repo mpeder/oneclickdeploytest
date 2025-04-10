@@ -1,21 +1,23 @@
 # Google Cloud Cortex Framework for Meridian
+
 <walkthrough-tutorial-duration duration="30min"></walkthrough-tutorial-duration>
 
 ## What is Google Cloud Cortex Framework for Meridian?
 
-One of the key value propositions of Google Cloud Cortex Framework is to provide a Data & AI foundation for next generation enterprise intelligence that enables analytics spanning across key areas such as sales and marketing, order fulfillment and inventory management. 
+One of the key value propositions of Google Cloud Cortex Framework is to provide a Data & AI foundation for next generation enterprise intelligence that enables analytics spanning across key areas such as sales and marketing, order fulfillment and inventory management.
 
 Cortex for Marketing provides cross media platform KPIs and metrics. These metrics are a significant part of the pre-modeling data preparation step for running Google’s latest Marketing Mix Model (MMM) called Meridian. Advertisers can accelerate the pre-modeling data preparation process by leveraging Cortex Data Foundation.
 
 For more information, see:
 
-- [Google Cloud Cortex Framework](https://cloud.google.com/cortex/docs/overview) 
+- [Google Cloud Cortex Framework](https://cloud.google.com/cortex/docs/overview)
 - [Cortex Framework for Marketing](https://cloud.google.com/cortex/docs/data-sources-and-workloads#marketing)
 - [Meridian](https://developers.google.com/meridian)
 
 This tutorial will guide you through demo deployment of Cortex Framework for Meridian in your own Google Cloud project.
 
 This deployment includes:
+
 - Cortex Marketing with Cross Media with sample marketing data for Google Ads, YouTube, Meta and TikTik
 - Cortex for Meridian
 - Oracle EBS with sample sales data
@@ -25,6 +27,7 @@ For a full production deployment please follow the [full deployment steps](https
 Click the **Start** button to move to the next step.
 
 ## Please select a project for deployment or create one.
+
 <walkthrough-project-setup billing=true></walkthrough-project-setup>
 
 ## Confirm project and region
@@ -36,13 +39,16 @@ The default region used is: `us-central1`. Make sure you select this when viewin
 Click the **Next** button to move to the next step.
 
 ## Start deployment
+
 <walkthrough-cloud-shell-icon></walkthrough-cloud-shell-icon>
+
+❗️IMPORTANT❗️The data and Meridian modelling parameters used are intended for demo use only! Do not use the config from this demo directly in a production environment. Meridian parameters should be chosen with great care. NEVER make actual changes to your marketing spend before reading and understanding all details about how to do (Meridian modelling)[https://developers.google.com/meridian/docs/basics/about-the-project]. If needed consult with an official (Google Meridian partner)[https://developers.google.com/meridian/partners] and/or your Google Ads representative."
 
 ```sh
 ./1_click_meridian.sh --project "<walkthrough-project-id/>"
 ```
 
-<walkthrough-footnote>The 1-Click deployment will create Marketing and Oracle sales datasets, GCS buckets and deploy services needed to run Meridian with the sample data. </walkthrough-footnote>
+<walkthrough-footnote>The 1-Click deployment will create Marketing and Oracle EBS sales datasets, GCS buckets and deploy services needed to run Meridian with the sample data. </walkthrough-footnote>
 
 When the script starts click the **Next** button.
 
