@@ -42,7 +42,7 @@ Click the **Next** button to move to the next step.
 
 <walkthrough-cloud-shell-icon></walkthrough-cloud-shell-icon>
 
-❗️IMPORTANT❗️The data and Meridian modelling parameters used are intended for demo use only! Do not use the config from this demo directly in a production environment. Meridian parameters should be chosen with great care. NEVER make actual changes to your marketing spend before reading and understanding all details about how to do (Meridian modelling)[https://developers.google.com/meridian/docs/basics/about-the-project]. If needed consult with an official (Google Meridian partner)[https://developers.google.com/meridian/partners] and/or your Google Ads representative."
+❗️IMPORTANT❗️The data and Meridian modelling parameters used are intended for demo use only! Do not use the config from this demo directly in a production environment. Meridian parameters should be chosen with great care. NEVER make actual changes to your marketing spend before reading and understanding all details about how to do [Meridian modelling](https://developers.google.com/meridian/docs/basics/about-the-project). If needed consult with an official [Google Meridian partner](https://developers.google.com/meridian/partners) and/or your Google Ads representative."
 
 ```sh
 ./1_click_meridian.sh --project "<walkthrough-project-id/>"
