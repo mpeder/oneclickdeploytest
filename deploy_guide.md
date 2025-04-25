@@ -59,7 +59,7 @@ When the script starts click the **Next** button.
 
 The deployment is now running please wait for the Cloud Build deployment to complete. This will take about 25-30 mins.
 
-❗️**IMPORTANT**❗️If the Cloud Shell session times out while the [Cloud Build](https://console.cloud.google.com/cloud-build/builds) runs, the (Colab notebook execution)(https://console.cloud.google.com/vertex-ai/colab/execution-jobs) might not be started automatically. In this case you can start it manually in the Google Cloud portal under [Workflows](https://console.cloud.google.com/workflows/workflow/us-central1/cortex-meridian-execute-notebook) or simply run this command:
+❗️**IMPORTANT**❗️If the Cloud Shell session times out while the [Cloud Build](https://console.cloud.google.com/cloud-build/builds) runs, the [Colab notebook execution](https://console.cloud.google.com/vertex-ai/colab/execution-jobs) might not be started automatically. In this case you can start it manually in the Google Cloud portal under [Workflows](https://console.cloud.google.com/workflows/workflow/us-central1/cortex-meridian-execute-notebook) or simply run this command:
 
 ```sh
 gcloud workflows execute cortex-meridian-execute-notebook --data="{}" --location=us-central1 --project="<walkthrough-project-id/>"
